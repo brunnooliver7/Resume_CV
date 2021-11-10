@@ -20,7 +20,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-height: 1000px;
+  min-height: 600px;
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -199,6 +199,7 @@ p {
   display: grid;
   grid-template-columns: 150px 1fr;
   justify-content: center;
+  align-items: center;
 }
 
 .skills .box h4 {
