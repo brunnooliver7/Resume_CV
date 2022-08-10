@@ -100,6 +100,11 @@ body {
   color: #03a9f4;
 }
 
+.linkedin-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .contact-info ul li span {
   color: #fff;
   font-weight: 300;
@@ -185,6 +190,12 @@ p {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
+}
+
+.about .focusing {
+  color: #003147;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .about .box .text h4 {
