@@ -9,193 +9,222 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
-  <div class="container">
+<!-- <body class="bg-blue-300 flex justify-center items-center w-[100vw] h-[100vh] font-['Poppins']"> -->
+
+<body class="bg-blue-300 flex justify-center items-center w-[100vw] h-screen font-['Poppins']">
+  <!-- <div class="h-[297mm] w-[210mm] bg-white grid grid-cols-[1fr_2fr] shadow"> -->
+  <div class="h-full w-[210mm] bg-white grid grid-cols-[1fr_2fr] shadow">
 
     <!-- LEFT -->
-    <div class="left-side">
-
-      <div class="profile-text">
-        <div class="img-box">
-          <img src="./img.jpg">
+    <div class="bg-[#003147] p-6 text-white">
+      <!-- Img, Name, Title -->
+      <div class="w-full flex flex-col justify-center items-center">
+        <div class="w-40 pb-2">
+          <div class="rounded-full overflow-hidden">
+            <img src="./img2.jpg">
+          </div>
         </div>
-        <h2>Bruno Oliveira</h2><br><span>Fullstack Developer</span>
+        <div class="text-center">
+          <span class="text-lg font-semibold uppercase">Bruno Oliveira</span>
+          <br>
+          <span class="text-sm font-light uppercase">Fullstack Developer</span>
+        </div>
+        <div class="w-full border-b border-[rgba(255,255,255,0.2)] mt-4"></div>
       </div>
 
       <!-- CONTACT INFO -->
-      <div class="contact-info">
-        <h3 class="title-left">Contact Info</h3>
+      <div class="pt-10">
+        <div class="uppercase font-semibold tracking-wider">Contact Info</div>
         <ul>
-          <li>
-            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-            <span class="text">+55 61 111-111-111</span>
+          <li class="mt-4 cursor-pointer">
+            <span class="inline-block w-6 text-[#03a9f4] content-center">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </span>
+            <span class="font-light">+55 61 981-711-485</span>
           </li>
-          <li>
-            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
-            <span class="text">bruno@mail.com</span>
+          <li class="mt-4 cursor-pointer">
+            <span class="inline-block w-6 text-[#03a9f4]"><i class="fa fa-envelope-o" aria-hidden="true"></i> </span>
+            <span class="text-sm">brunno.oliver7@gmail.com</span>
           </li>
-          <li>
-            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-            <span class="text">
-              linkedin.com/me
+          <li class="mt-4 cursor-pointer">
+            <span class="inline-block w-6 text-[#03a9f4]"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+            <span class="font-light">
+              <a class="linkedin-link" href="https://www.linkedin.com/in/bruno-oliveira-4a8a12138">
+                bruno-oliveira
+              </a>
             </span>
           </li>
-          <li>
-            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-            <span class="text">Brasília, DF, Brazil</span>
+          <li class="mt-4 mr-2 cursor-pointer">
+            <span class="inline-block w-6 text-[#03a9f4]">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </span>
+            <span class="font-light">Brasília - DF, Brazil</span>
           </li>
         </ul>
       </div>
 
       <!-- EDUCATION -->
-      <div class="contact-info education">
-        <h3 class="title-left">Education</h3>
+      <div class="pt-10">
+        <h3 class="uppercase font-semibold tracking-wider">Education</h3>
         <ul>
-          <li>
-            <h5>2022</h5>
-            <h4>Software Architecture</h4>
-            <h4>IGTI</h4>
-          </li>
-          <li>
-            <h5>2012-2018</h5>
-            <h4>Bachelor of Civil Engineering</h4>
-            <h4>University of Brasilia</h4>
+          <li class="mt-4">
+            <h5 class="text-[#03a9f4] font-medium">2012-2018</h5>
+            <h4 class="font-medium">Bachelor of Civil Engineering</h4>
+            <h4 class="font-light">University of Brasilia</h4>
           </li>
         </ul>
       </div>
 
       <!-- LANGUAGES -->
-      <div class="contact-info languages">
-        <h3 class="title-left">Languages</h3>
+      <div class="pt-10">
+        <h3 class="uppercase font-semibold tracking-wider">Languages</h3>
+        <div class="mb-4 w-full"></div>
         <ul>
           <li>
-            <span class="text">English</span>
-            <span class="percent">
-              <div style="width: 70%;"></div>
+            <span>English</span>
+            <span class="mt-2 relative w-full h-2 bg-[#081921] block">
+              <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 70%;"></div>
+            </span>
+          </li>
+          <li class="mt-4">
+            <span>Portuguese</span>
+            <span class="mt-2 relative w-full h-2 bg-[#081921] block">
+              <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 100%;"></div>
             </span>
           </li>
           <li>
-            <span class="text">Portuguese</span>
-            <span class="percent">
-              <div style="width: 90%;"></div>
-            </span>
-          </li>
-          <li>
-          <li>
-            <span class="text">Spanish</span>
-            <span class="percent">
-              <div style="width: 30%;"></div>
-            </span>
-          </li>
         </ul>
       </div>
-
     </div>
 
     <!-- RIGHT -->
-    <div class="right-side">
+    <div class="bg-white relative p-6">
 
       <!-- PROFILE -->
-      <div class="about">
-        <h2 class="title-right">Profile</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-          eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-        </p>
+      <div class="mb-6">
+        <h2 class="text-[#003147] uppercase tracking-wide mb-2 font-bold">Profile</h2>
+        <div class=" mb-2 text-[#333]">
+          <p>• Versatile, ready for new challenges in the IT market</p>
+          <p>• Ability to work in a team</p>
+          <p>• Participatory and communicative</p>
+          <p>• Systematic and able to meet deadlines and targets</p>
+        </div>
+        <div class="font-[#333] text-sm">
+          <h4>Currently focusing on studying Node, React and AWS</h4>
+        </div>
       </div>
 
       <!-- EXPERIENCE -->
-      <div class="about">
-        <h2 class="title-right">Experience</h2>
-        <div class="box">
-          <div class="year-company">
-            <h5>10/2021 - Present</h5>
-            <h5>Company 3</h5>
+      <div class="mb-6">
+        <div class="text-[#003147] uppercase tracking-wide font-bold">Experience</div>
+
+        <!-- EXP 4 -->
+        <div class="flex flex-row my-5">
+          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
+            <div>10/2021 - Present</div>
+            <div>Cooperforte</div>
           </div>
-          <div class="text">
-            <h4>Mid-Level Fullstack Developer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="year-company">
-            <h5>11/2020 - 09/2021</h5>
-            <h5>Company 2</h5>
-          </div>
-          <div class="text">
-            <h4>Mid-Level Fullstack Developer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="text-[#2a7da2]">
+            <h4 class="uppercase font-semibold">Mid-Level Fullstack Developer</h4>
+            <p class="text-[#333]">
+              Development of a credit union system.
+              <br />
+              Technologies: Spring, React, MS SQL Server
+            </p>
           </div>
         </div>
-        <div class="box">
-          <div class="year-company">
-            <h5>03/2020 - 10/2020</h5>
-            <h5>Company 1</h5>
+
+        <!-- EXP 3 -->
+        <div class="flex flex-row my-5">
+          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
+            <div>11/2020 - 09/2021</div>
+            <div>SICOOB</div>
           </div>
-          <div class="text">
-            <h4>Junior Fullstack Developer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          <div class="text-[#2a7da2]">
+            <h4 class="uppercase font-semibold">Mid-Level Fullstack Developer</h4>
+            <p class="text-[#333]">
+              Improvements on a credit union system.
+              <br />
+              Technologies: Java EE, Angular, MS SQL Server
+            </p>
+          </div>
+        </div>
+
+        <!-- EXP 2 -->
+        <div class="flex flex-row my-5">
+          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
+            <div>03/2020 - 10/2020</div>
+            <div>Banco do Brasil</div>
+          </div>
+          <div class="text-[#2a7da2]">
+            <h4 class="uppercase font-semibold">Junior Fullstack Developer</h4>
+            <p class="text-[#333]">
+              Development of a system for management of activities and team management system.
+              <br />
+              Technologies: Node, Angular, MongoDB
+            </p>
+          </div>
+        </div>
+
+        <!-- EXP 1 -->
+        <div class="flex flex-row my-5">
+          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
+            <div>03/2018 - 10/2018</div>
+            <div>University of Brasília</div>
+          </div>
+          <div class="text-[#2a7da2]">
+            <h4 class="uppercase font-semibold">Project: ENG3D</h4>
+            <p class="text-[#333]">
+              A structural analysis software was developed as a final course project for educational purposes.
+              <br />
+              Technologies: Electron JS, Three JS
+            </p>
           </div>
         </div>
       </div>
 
       <!-- PROFESSIONAL SKILLS -->
-      <div class="about skills">
-        <h2 class="title-right">Professional Skills</h2>
-        <div class="box">
-          <h4>Java</h4>
-          <div class="percent">
-            <div style="width: 55%;"></div>
+      <div>
+        <div class="mb-6 text-[#003147] uppercase tracking-wide font-bold">Professional Skills</div>
+        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
+          <div class="uppercase text-[#848c90] font-medium">Java</div>
+          <div class="relative w-full h-2 bg-[#f0f0f0]">
+            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 65%;"></div>
           </div>
         </div>
-        <div class="box">
-          <h4>Node</h4>
-          <div class="percent">
-            <div style="width: 75%;"></div>
+        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
+          <div class="uppercase text-[#848c90] font-medium">Node</div>
+          <div class="relative w-full h-2 bg-[#f0f0f0]">
+            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 75%;"></div>
           </div>
         </div>
-        <div class="box">
-          <h4>React</h4>
-          <div class="percent">
-            <div style="width: 70%;"></div>
+        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
+          <div class="uppercase text-[#848c90] font-medium">React</div>
+          <div class="relative w-full h-2 bg-[#f0f0f0]">
+            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 85%;"></div>
           </div>
         </div>
-        <div class="box">
-          <h4>Angular<h4>
-          <div class="percent">
-            <div style="width: 60%;"></div>
+        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
+          <div class="uppercase text-[#848c90] font-medium">Angular</div>
+          <div class="relative w-full h-2 bg-[#f0f0f0]">
+            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
+          <div class="uppercase text-[#848c90] font-medium">AWS</div>
+          <div class="relative w-full h-2 bg-[#f0f0f0]">
+            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 30%;"></div>
           </div>
         </div>
       </div>
-
-      <!-- INTEREST -->
-      <div class="about interest">
-        <h2 class="title-right">Interest</h2>
-        <ul>
-          <li>
-            <i class="fa fa-gamepad" aria-hidden="true"></i>
-            Gaming
-          </li>
-          <li>
-            <i class="fa fa-book" aria-hidden="true"></i>
-            Reading
-          </li>
-          <li>
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
-            Cooking
-          </li>
-        </ul>
-      </div>
-
     </div>
-
   </div>
 </body>
 
