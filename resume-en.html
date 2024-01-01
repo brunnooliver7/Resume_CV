@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive CV using HTML and CSS</title>
+  <title>Bruno's CV</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
@@ -117,123 +117,152 @@
     <!-- RIGHT -->
     <div class="bg-white relative p-6">
 
-      <!-- PROFILE -->
-      <div class="mb-6">
-        <h2 class="text-[#003147] uppercase tracking-wide mb-2 font-bold">Profile</h2>
-        <div class=" mb-2 text-[#333]">
-          <p>• Versatile, ready for new challenges in the IT market</p>
-          <p>• Ability to work in a team</p>
-          <p>• Participatory and communicative</p>
-          <p>• Systematic and able to meet deadlines and targets</p>
-        </div>
-        <div class="font-[#333]">
-          <h4>Currently focusing on studying Node, React and AWS</h4>
+      <!-- ABOUT ME -->
+      <div class="mb-4">
+        <h2 class="uppercase tracking-wide mb-2 font-bold text-[#003147]">About Me</h2>
+        <p class=" mb-2 text-[#333] text-sm font-medium">
+          Fullstack Developer with 3+ years of experience.
+          <br />
+          Worked with frameworks and libraries like React, NextJS, Angular, NodeJS and Spring Boot.
+        </p>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="mb-4">
+        <div class="uppercase tracking-wide font-bold text-[#003147]">Skills</div>
+
+        <!-- <div class="grid grid-cols-[25mm_1fr] text-sm"> -->
+        <div class="grid grid-cols-[25mm_1fr] text-sm text-[#333]">
+          <div class="grid grid-rows-3 gap-0 items-center">
+            <div class="">Frontend</div>
+            <div class="">Backend</div>
+            <div class="">Others</div>
+          </div>
+          <div class="grid grid-rows-3 gap-0 items-center text-xs text-[#333]">
+            <div>
+              JavaScript &bull; TypeScript &bull; React &bull; Angular &bull; NextJs &bull; Vercel &bull; Tailwind &bull; Tanstack-Query &bull; Tanstack-Table &bull; Material-UI &bull; ShadCN &bull; ThreeJS
+            </div>
+            <div>Java  &bull; JavaScript &bull; Spring Boot &bull; NodeJS &bull; Express &bull; API REST</div>
+            <div>SQL &bull; NoSQL &bull; PostgreSQL &bull; MS SQL Server &bull; MongoDB &bull; Git &bull; GitFlow &bull; GitHub &bull; GitLab &bull; Docker &bull; AWS (Lambda, S3, CloudFront, DynamoDB, EC2, API Gateway, CDK)</div>
+          </div>
         </div>
       </div>
 
       <!-- EXPERIENCE -->
-      <div class="mb-6">
+      <div>
         <div class="text-[#003147] uppercase tracking-wide font-bold mb-2">Experience</div>
 
         <!-- EXP 4 -->
-        <div class="flex flex-row mb-6">
-          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
-            <div>10/2021 - Present</div>
-            <div>Cooperforte</div>
+        <div class="mb-4">
+          <div class="grid grid-cols-[50mm_1fr] mb-2 text-sm">
+            <div class="w-fit uppercase text-[#848c90] font-semibold">
+              <div>10/2021 - Present</div>
+              <div>Cooperforte</div>
+            </div>
+            <div class="text-[#2a7da2]">
+              <h4 class="uppercase font-semibold text-right">Mid-Level Fullstack Developer</h4>
+            </div>
           </div>
-          <div class="text-[#2a7da2]">
-            <h4 class="uppercase font-semibold">Mid-Level Fullstack Developer</h4>
-            <p class="text-[#333]">
-              Development of a credit union system.
+
+          <div>
+            <p class="text-[#333] text-xs">
+              &bull; Collaborated with the developer team at Cooperforte, a financial services provider that caters to
+              hundreds of thousands of users and processes millions of dollars.
               <br />
-              Technologies: Spring, React, MS SQL Server
+              &bull; Contributed to the development and maintenance of the company's new web main application using
+              React and Spring technologies.
+              <br />
+              &bull; Worked closely with the AWS team to connect the new application with the legacy system and
+              ensured seamless integration between the two.
+              <br />
+              &bull; Collaborated with cross-functional teams, including product owners and designers, to ensure the
+              application meets the business and user requirements.
+              <br />
+            <div class="font-medium text-xs mt-1">
+              JavaScript &bull; Java &bull; Spring Boot &bull; Apache Kafka &bull; API REST &bull; React &bull; Material-UI &bull;
+              Tailwind CSS &bull; MS SQL Server &bull; Git &bull; GitLab &bull; Tanstack-Query
+            </div>
             </p>
           </div>
         </div>
 
         <!-- EXP 3 -->
-        <div class="flex flex-row my-6">
-          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
-            <div>11/2020 - 09/2021</div>
-            <div>SICOOB</div>
+        <div class="my-4">
+          <div class="grid grid-cols-[50mm_1fr] mb-2 text-sm">
+            <div class="w-fit uppercase text-[#848c90] font-semibold">
+              <div>11/2020 - 09/2021</div>
+              <div>SICOOB</div>
+            </div>
+            <div class="text-[#2a7da2]">
+              <h4 class="uppercase font-semibold text-right">Mid-Level Fullstack Developer</h4>
+            </div>
           </div>
-          <div class="text-[#2a7da2]">
-            <h4 class="uppercase font-semibold">Mid-Level Fullstack Developer</h4>
-            <p class="text-[#333]">
-              Improvements on a credit union system.
+          <div>
+            <p class="text-[#333] text-xs">
+              &bull; Contributed to the development and maintenance of the main credit application at Sicoob, a
+              cooperative financial institution present throughout Brazil.
               <br />
-              Technologies: Java EE, Angular, MS SQL Server
+              &bull; Worked collaboratively with a larger team to implement new features and functionalities using
+              Java
+              and Angular2+.
+              <br />
+            <p class="font-medium text-xs mt-1">
+              JavaScript &bull; Java &bull; Angular &bull; MS SQL Server &bull; API REST &bull; Git &bull; GitLab
+            </p>
             </p>
           </div>
         </div>
 
         <!-- EXP 2 -->
-        <div class="flex flex-row my-6">
-          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
-            <div>03/2020 - 10/2020</div>
-            <div>Banco do Brasil</div>
+        <div class="my-4">
+          <div class="grid grid-cols-[50mm_1fr] mb-2 text-sm">
+            <div class="w-fit uppercase text-[#848c90] font-semibold">
+              <div>03/2020 - 10/2020</div>
+              <div>Banco do Brasil</div>
+            </div>
+            <div class="text-[#2a7da2]">
+              <h4 class="uppercase font-semibold text-right">Junior Fullstack Developer</h4>
+            </div>
           </div>
-          <div class="text-[#2a7da2]">
-            <h4 class="uppercase font-semibold">Junior Fullstack Developer</h4>
-            <p class="text-[#333]">
-              Development of a system for management of activities and team management system.
+          <div>
+            <p class="text-[#333] text-xs">
+              &bull; Contributed to the development and maintenance of an internal management application for Banco do
+              Brasil, the second-largest bank in Latin America.
               <br />
-              Technologies: Node, Angular, MongoDB
+              &bull; Worked on measuring and organizing employees' and teams' productivity by implementing features
+              using Angular, Node.js, MongoDB, and Git, and showcased proficiency in this technologies. Development of a
+              system for management of activities and team management system.
+              <br />
+            <div class="font-medium text-xs mt-1">
+              JavaScript &bull; Node &bull; Express &bull; Angular &bull; MongoDB &bull; JavaScript &bull; API REST &bull; Git &bull; GitLab
+            </div>
             </p>
           </div>
         </div>
 
         <!-- EXP 1 -->
-        <div class="flex flex-row my-6">
-          <div class="min-w-[45mm] uppercase text-[#848c90] font-semibold">
-            <div>03/2018 - 10/2018</div>
-            <div>University of Brasília</div>
+        <div class="my-4">
+          <div class="grid grid-cols-[50mm_1fr] mb-2 text-sm">
+            <div class="w-fit uppercase text-[#848c90] font-semibold">
+              <div>03/2018 - 10/2018</div>
+              <div>University of Brasília</div>
+            </div>
+            <div class="text-[#2a7da2]">
+              <h4 class="uppercase font-semibold text-right">Developer</h4>
+            </div>
           </div>
-          <div class="text-[#2a7da2]">
-            <h4 class="uppercase font-semibold">Developer</h4>
-            <p class="text-[#333]">
+          <div>
+            <p class="text-[#333] text-xs">
               A structural analysis software was developed as a final course project for educational purposes.
               <br />
-              Technologies: Electron JS, Three JS
+            <div class="font-medium text-xs mt-1">
+              JavaScript &bull; Node &bull; ElectronJS &bull; ThreeJS &bull; Git &bull; GitHub
+            </div>
             </p>
           </div>
         </div>
       </div>
 
-      <!-- PROFESSIONAL SKILLS -->
-      <div>
-        <div class="mb-2 text-[#003147] uppercase tracking-wide font-bold">Professional Skills</div>
-        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
-          <div class="uppercase text-[#848c90] font-medium">Java</div>
-          <div class="relative w-full h-2 bg-[#f0f0f0]">
-            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 65%;"></div>
-          </div>
-        </div>
-        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
-          <div class="uppercase text-[#848c90] font-medium">Node</div>
-          <div class="relative w-full h-2 bg-[#f0f0f0]">
-            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 75%;"></div>
-          </div>
-        </div>
-        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
-          <div class="uppercase text-[#848c90] font-medium">React</div>
-          <div class="relative w-full h-2 bg-[#f0f0f0]">
-            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 85%;"></div>
-          </div>
-        </div>
-        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
-          <div class="uppercase text-[#848c90] font-medium">Angular</div>
-          <div class="relative w-full h-2 bg-[#f0f0f0]">
-            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 60%;"></div>
-          </div>
-        </div>
-        <div class="relative w-full grid grid-cols-[150px_1fr] justify-center items-center">
-          <div class="uppercase text-[#848c90] font-medium">AWS</div>
-          <div class="relative w-full h-2 bg-[#f0f0f0]">
-            <div class="absolute top-0 left-0 h-full bg-[#03a9f4]" style="width: 30%;"></div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </body>
